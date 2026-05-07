@@ -24,10 +24,14 @@ Before running the workflow, you will need to set up your environment and obtain
     * [Tavily API Key](https://tavily.com/) (For the Researcher's web search capabilities)
 
 2.  **Environment Variables:**
-    Set the following environment variables in your terminal or a `.env` file:
+    Create a `.env` file in the root directory and add your API keys. You can use the `.env.example` file as a template:
     ```bash
-    export GROQ_API_KEY="your_groq_api_key"
-    export TAVILY_API_KEY="your_tavily_api_key"
+    cp .env.example .env
+    ```
+    Then, edit `.env` to include your actual keys:
+    ```env
+    GROQ_API_KEY="your_groq_api_key"
+    TAVILY_API_KEY="your_tavily_api_key"
     ```
 
 3.  **Install Dependencies:**
